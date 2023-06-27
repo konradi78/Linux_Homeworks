@@ -1,0 +1,10 @@
+[ec2-user@ip-172-31-33-20 Alex]$ cat myfirstbashscript.sh
+  #!/bin/bash
+
+  date
+
+  USER=$(whoami)
+
+
+  echo "Hello,$USER!"
+  echo "Youir current directory is:$(pwd)"
