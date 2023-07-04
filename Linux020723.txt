@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for i in {1..10}
+do
+    date +%X
+    sleep 2
+done
+
+ps -ef | wc -l 
+
+cat /proc/cpuinfo > file.txt
+cat /etc/os-release | grep NAME | head -1 >> file.txt
+cat /etc/os-release | grep v3.12 | awk '{print$1}' | sed 's/PRETTY_NAME="//' >> file.txt
+
+for i in {50..100}
+do
+    touch "${i}.txt"
+done
