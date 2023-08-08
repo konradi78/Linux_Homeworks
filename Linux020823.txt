@@ -1,0 +1,6 @@
+#!/bin/bash
+date_format=$(date +"%d.%m.%y")
+for run in {1..10}
+do
+touch  "$run$date_format.txt"
+done
